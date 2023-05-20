@@ -1,0 +1,136 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  /* font-size: 10px; */
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  font-size: 16px;
+  background-color: rgb(233, 233, 233);
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.hero-section {
+  height: 50vw;
+  background-image: url(https://images.pexels.com/photos/7002964/pexels-photo-7002964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+}
+
+.hero-section {
+  display: flex;
+  /* background-color: rgb(234, 38, 38); */
+  height: 500px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buy,
+.learn {
+  margin-top: 20px;
+  border: none;
+  height: 4rem;
+  width: 10rem;
+  border-radius: 5px;
+  background-color: rgb(72, 3, 3);
+  color: aliceblue;
+}
+.gallary {
+  width: 100%;
+}
+
+.gallary-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+  padding: 5rem;
+}
+.gallary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 200px;
+  gap: 20px;
+}
+.details {
+  font-size: 2.5rem;
+}
+.quary-item {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.quary-selecter {
+  background-color: gray;
+  height: 120px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2rem;
+  border-radius: 8px;
+  color: rgb(217, 219, 220);
+}
+.contact {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer-header {
+  display: grid;
+  max-width: 50rem;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+#email,
+#msg,
+#button {
+  grid-column-start: span 2;
+}
+#msg {
+  height: 50px;
+}
+
+#button {
+  background-color: gray;
+  color: white;
+  height: 30px;
+  border: none;
+  margin-bottom: 100px;
+}
+
+#first,
+#last,
+#email {
+  height: 25px;
+}
+
+@media (max-width: 1200px) {
+  quary-item {
+    height: 25rem;
+    width: 25rem;
+  }
+}
+@media (max-width: 370px) {
+  html {
+    font-size: 1.5rem;
+  }
+}
